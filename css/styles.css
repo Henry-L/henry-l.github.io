@@ -5,4 +5,10 @@ html {
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
+  background-color: #E8E8E8
+}
+
+#content-container {
+  font-size: 20pt;
+  padding: 35px;
 }

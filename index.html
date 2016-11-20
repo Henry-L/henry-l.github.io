@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
   <meta charset="utf-8">
 
@@ -11,17 +11,33 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+  <script src="js/app.js"></script>
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <div id="content-container">
-    <h1>Henry Lee</h1>
-    <h2>Content coming soon</h2>
+  <div ng-controller="HomeCtrl as $ctrl">
+    <div id="content-container">
+      <h1>{{$ctrl.name}}</h1>
+      <h3>{{$ctrl.title}}</h3>
+
+      <div ng-repeat="link in $ctrl.links">
+        <a ng-href="{{link.location}}" target="_blank">
+          {{link.text}}
+        </button>
+      </div>
+
+      <div id="end-content">
+        <p>Contact me at: hl@hnrylee.com</p>
+        <p>p.s. site is still a work in progress &#9786;</p>
+      </div>
+    </div>
   </div>
-	
-	<script src="js/scripts.js"></script>
+
 </body>
 </html>

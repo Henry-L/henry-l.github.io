@@ -1,5 +1,5 @@
 html {
-  background: url(../images/lines_and_lines.png) no-repeat center center fixed;
+  background: url(../assets/images/lines.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10,5 +10,9 @@ html {
 
 #content-container {
   font-size: 20pt;
-  padding: 35px;
+  padding: 5px 40px;
+}
+
+#end-content {
+	padding-top: 50px;
 }

@@ -21,9 +21,22 @@
 </head>
 
 <body>
-  <div id="content-container" ng-controller="HomeCtrl as $ctrl">
-    <h1>{{$ctrl.myName}}</h1>
-    <h2>{{$ctrl.comingSoon}}</h2>
+  <div ng-controller="HomeCtrl as $ctrl">
+    <div id="content-container">
+      <h1>{{$ctrl.name}}</h1>
+      <h3>{{$ctrl.title}}</h3>
+
+      <div ng-repeat="link in $ctrl.links">
+        <a ng-href="{{link.location}}" target="_blank">
+          {{link.text}}
+        </button>
+      </div>
+
+      <div id="end-content">
+        <p>Contact me at: hl@hnrylee.com</p>
+        <p>p.s. site is still a work in progress &#9786;</p>
+      </div>
+    </div>
   </div>
 
 </body>

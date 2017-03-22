@@ -2,7 +2,7 @@
     var app = angular.module('app', []);
     app.controller('HomeCtrl', function() {
         this.name = 'Henry Lee';
-        this.title = 'Software Engineer at Datto'
+        this.title = 'Software Engineer at Robin Powered'
 
         this.links = [{
             text: 'Github',
